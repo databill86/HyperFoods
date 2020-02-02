@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+cm/__init__.py
+cm/arguments.py
+cm/arguments_module.py
+cm/base.py
+cm/option.py
+cm/options_module.py
+cm.egg-info/PKG-INFO
+cm.egg-info/SOURCES.txt
+cm.egg-info/dependency_links.txt
+cm.egg-info/top_level.txt

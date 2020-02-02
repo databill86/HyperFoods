@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HyperFoods</title>
+
+    <link rel="icon" href="./img/icl.png">
+
+</head>
+
+<body style="min-width: 1690px; margin: auto; position: relative">
+
+<header style="text-align: center; margin: auto">
+    
+    <img src="../img/icl.jpeg" width="25px" style="display: none">
+
+    <p style="text-align: center; font-size: 75px;">HyperFoods</p>
+
+</header>
+
+<div style="margin: auto; text-align: center">
+
+    <input type = "url" id = "url" style="display: block; text-align: center; margin: auto; font-size: 20px; width: 1000px; border-radius: 20px" placeholder="https://example.com"/>
+
+    <button id = "run" style="display: block; text-align: center; margin: auto; width: 100px; height: 30px; margin-top: 20px; background-color: black; color: white; border-radius: 20px; cursor: pointer">Run</button>
+
+    <button id = "run2" style="display: block; text-align: center; margin: auto; width: 100px; height: 30px; margin-top: 20px; background-color: black; color: white; border-radius: 20px; cursor: pointer">Run</button>
+
+    <img id = "img" src="./img/hyperfoods.jpg" style="border-radius: 20px; margin-top: 20px; width: 400px">
+
+    <p id = "ingredients"></p>
+
+</div>
+
+<div style="margin: auto; width: 100px; margin-top: 50px; width: 75px; ">
+
+<img id = "img2" src="./img/jupyter.png" style="width: 75px; cursor: pointer; display: none" onclick="window.open('https://warcraft12321.github.io/HyperFoods');">
+
+</div>
+
+<footer style="text-align: center; position: fixed; bottom: 0; width: 100%; background-color: black; color: white; height: 50px; margin: auto; padding-top: 25px"><img src="./img/jupyter.png" width="25px" style="display: inline-block; position: absolute; top: 25%; border-radius: 5px; vertical-align: text-bottom; cursor: pointer;" onclick="window.open('https://warcraft12321.github.io/HyperFoods');"></footer>
+
+</body>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+<script>
+
+        d3.select('#run').on('click', function() {
+
+                const fs = require('fs');
+
+// Data which will write in a file.
+                let data = "Learning how to write in a file.";
+
+// Write data in 'Output.txt' .
+                fs.writeFile('output.txt', data, (err) => {
+
+                    // In case of a error throw err.
+                    if (err) throw err;
+                })
+        })
+
+</script>
+
+<script>
+
+    function stringToBinary(str, spaceSeparatedOctets) {
+    function zeroPad(num) {
+        return "00000000".slice(String(num).length) + num;
+    }
+
+    return str.replace(/[\s\S]/g, function(str) {
+        str = zeroPad(str.charCodeAt().toString(2));
+        return !1 == spaceSeparatedOctets ? str : str + " "
+    });
+};
+
+// Action on clicking in the Run button.
+    d3.select('#run').on('click', function() {
+
+            let inter = document.getElementById("url").value;
+
+            console.log(inter);
+
+            fetch("run/" + stringToBinary(String(inter))).then(function (res) {
+                // Res will be a Response object.
+                // Use res.text() or res.json() to get the information that the Node program sent.
+                return res.text();
+
+            }).then(function (jsonData) {
+
+                console.log(jsonData);
+                document.getElementById("ingredients").innerText = jsonData;
+
+            });
+
+            document.getElementById("img").src = document.getElementById("url").value;
+    });
+
+
+    d3.select('#run2').on('click', function() {
+
+            let inter = document.getElementById("url").value;
+
+            console.log(inter);
+
+            fetch("run2/" + stringToBinary(String(inter))).then(function (res) {
+                // Res will be a Response object.
+                // Use res.text() or res.json() to get the information that the Node program sent.
+                return res.text();
+
+            }).then(function (jsonData) {
+
+                console.log(jsonData);
+                document.getElementById("ingredients").innerText = jsonData;
+
+            });
+
+            document.getElementById("img").src = document.getElementById("url").value;
+    });
+
+</script>
+
+</html>

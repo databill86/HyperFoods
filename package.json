@@ -1,0 +1,34 @@
+{
+  "name": "hyperfoods",
+  "version": "1.0.0",
+  "description": "[warcraft12321.github.io/HyperFoods](https://warcraft12321.github.io/HyperFoods)",
+  "main": "server.js",
+  "dependencies": {
+    "async": "^2.6.2",
+    "download-stats": "^0.3.4",
+    "express": "^4.16.4",
+    "file-exists": "^5.0.1",
+    "fs": "0.0.1-security",
+    "html2canvas": "^1.0.0-alpha.12",
+    "node-cmd": "^3.0.0",
+    "npm": "^6.9.0",
+    "npm-check-updates": "^3.1.1",
+    "perf_hooks": "^0.0.1",
+    "require": "^2.4.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warcraft12321/HyperFoods.git"
+  },
+  "author": "Luís Rita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/warcraft12321/HyperFoods/issues"
+  },
+  "homepage": "https://github.com/warcraft12321/HyperFoods#readme"
+}

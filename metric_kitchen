@@ -1,0 +1,8 @@
+{
+  "teaspoon":[
+  {"quantity":"5 mL", "synonyms":"tsp"}
+],
+  "tablespoon":[
+  {"quantity":"15 mL", "synonyms":"tbsp"}
+]
+}
