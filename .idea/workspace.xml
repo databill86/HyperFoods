@@ -1,7 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="120317de-c329-4bc5-9d78-db71c0ac084a" name="Default Changelist" comment="" />
+    <list default="true" id="120317de-c329-4bc5-9d78-db71c0ac084a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HyperFoods.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/HyperFoods.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms/view/matplotlib_designed.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/view/matplotlib_designed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/allRecipeDatabases.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/allRecipeDatabases.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/jaan/kaggle_and_nature.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/jaan/kaggle_and_nature.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/modelbest.ckpt" beforeDir="false" afterPath="$PROJECT_DIR$/data/modelbest.ckpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/recipe1M+/layer1.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/recipe1M+/layer1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/recipe1M+/layer11_corrected.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/recipe1M+/layer11_corrected.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/recipe1M+/layer2.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/recipe1M+/layer2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/recipe1M+/recipes_with_nutritional_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/recipe1M+/recipes_with_nutritional_info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trained_models/model.bin" beforeDir="false" afterPath="$PROJECT_DIR$/trained_models/model.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trained_models/model.txt" beforeDir="false" afterPath="$PROJECT_DIR$/trained_models/model.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/libfreetype.6.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/libfreetype.6.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/libjpeg.9.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/libjpeg.9.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/liblcms2.2.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/liblcms2.2.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/liblzma.5.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/liblzma.5.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/libopenjp2.2.3.1.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/libopenjp2.2.3.1.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/libpng16.16.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/libpng16.16.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/libtiff.5.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/libtiff.5.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/libwebp.7.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/libwebp.7.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/libwebpdemux.2.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/libwebpdemux.2.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/libwebpmux.3.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/libwebpmux.3.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/libz.1.2.11.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/PIL/.dylibs/libz.1.2.11.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/matplotlib/.dylibs/libpng16.16.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/matplotlib/.dylibs/libpng16.16.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/matplotlib/.dylibs/libz.1.2.10.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/matplotlib/.dylibs/libz.1.2.10.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/numpy/.dylibs/libgcc_s.1.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/numpy/.dylibs/libgcc_s.1.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/numpy/.dylibs/libgfortran.3.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/numpy/.dylibs/libgfortran.3.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/numpy/.dylibs/libopenblasp-r0.3.7.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/numpy/.dylibs/libopenblasp-r0.3.7.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/numpy/.dylibs/libquadmath.0.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/numpy/.dylibs/libquadmath.0.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/scipy/.dylibs/libgcc_s.1.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/scipy/.dylibs/libgcc_s.1.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/scipy/.dylibs/libgfortran.3.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/scipy/.dylibs/libgfortran.3.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/scipy/.dylibs/libopenblasp-r0.3.7.dev.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/scipy/.dylibs/libopenblasp-r0.3.7.dev.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/scipy/.dylibs/libquadmath.0.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/scipy/.dylibs/libquadmath.0.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sklearn/.dylibs/libomp.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sklearn/.dylibs/libomp.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/textblob-0.15.3.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/textblob-0.15.3.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/torch-0.4.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/torch-0.4.1.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/torch/lib/libcaffe2.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/torch/lib/libcaffe2.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/torch/lib/libshm.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/torch/lib/libshm.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/torchvision-0.2.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/torchvision-0.2.1.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/webcolors-1.10.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/webcolors-1.10.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vocabulary/units_list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vocabulary/units_list_final.txt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -348,7 +392,7 @@
       <workItem from="1579833032173" duration="286000" />
       <workItem from="1579833418486" duration="1286000" />
       <workItem from="1579836065830" duration="602000" />
-      <workItem from="1580669813948" duration="614000" />
+      <workItem from="1580669813948" duration="1431000" />
     </task>
     <task id="LOCAL-00001" summary="2nd Commit">
       <created>1574301115856</created>
@@ -623,7 +667,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580669957323</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="No Change Experiment">
+      <created>1580670729964</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1580670729964</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,7 +694,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Readme Updated" />
     <MESSAGE value="Enhanced Visualization Tools" />
     <MESSAGE value="Recipe Retrieval Algorithm Benchmarked" />
     <MESSAGE value="Building Recipe Recommendation System" />
@@ -668,7 +718,8 @@
     <MESSAGE value="Added Thesis Doc." />
     <MESSAGE value="Added Thesis PDF" />
     <MESSAGE value="Efficiency Improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Efficiency Improvements" />
+    <MESSAGE value="No Change Experiment" />
+    <option name="LAST_COMMIT_MESSAGE" value="No Change Experiment" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Inspections" timestamp="1578781755724">
@@ -691,10 +742,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="528" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1577204594585" />
-    <state x="559" y="221" key="CommitChangelistDialog2" timestamp="1580670728850">
+    <state x="559" y="221" key="CommitChangelistDialog2" timestamp="1580671776226">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="559" y="221" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1580670728850" />
+    <state x="559" y="221" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1580671776226" />
     <state x="559" y="201" key="CommitChangelistDialog2/0.23.1680.973@0.23.1680.973" timestamp="1579837596190" />
     <state x="168" y="94" key="DiffContextDialog" timestamp="1578782415613">
       <screen x="0" y="0" width="1680" height="1050" />

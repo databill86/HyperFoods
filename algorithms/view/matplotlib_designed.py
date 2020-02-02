@@ -16,10 +16,10 @@ def matplotlib_function(x_ingredients_embedded1_arg, x_ingredients_embedded2_arg
 
     # ----- PCA
 
-    for i, word in enumerate(words):
-        ax1.annotate(word, xy=(x_ingredients_embedded1_arg[i, 0], x_ingredients_embedded1_arg[i, 1]))
+    #for i, word in enumerate(words):
+        #ax1.annotate(word, xy=(x_ingredients_embedded1_arg[i, 0], x_ingredients_embedded1_arg[i, 1]))
 
     # ----- T-SNE
 
-    for i, word in enumerate(words):
-        ax2.annotate(word, xy=(x_ingredients_embedded2_arg[i, 0], x_ingredients_embedded2_arg[i, 1]))
+    #for i, word in enumerate(words):
+        #ax2.annotate(word, xy=(x_ingredients_embedded2_arg[i, 0], x_ingredients_embedded2_arg[i, 1]))

@@ -3,6 +3,11 @@
 
 ## HyperFoods: Machine intelligent mapping of cancer-beating molecules in foods
 
+### Objectives
+
+The aim of the project was to develop the algorithms and retrieve the ingredients, quantities and cooking processes from the Recipe1M+ dataset of recipes. Query API from FoodData Central to extract caloric information for each ingredient/recipe. To add flavour molecule information to each ingredient/recipe using FlavorDB. Label each recipe from Recipe1M+ dataset to a cuisine after training an SVM model in a dataset where this information was known. Calculate the number of anticancer molecules present in each recipe and present an ordered list including the ones with the higher value.  Cluster ingredients and recipes in terms of their similarity, considering how often 2 ingredients appear together in the dataset.
+Finally, to build a web application that retrieves complete recipes from images, suggests new healthier ones based on the previous and that recommends new ingredients in substitution to the originals.
+
 ### Recipe Retrieval w/ Higher Number Anti-Cancer Molecules
 
 Each recipe had all the ingredients concatenated in single string. It was used the ingredients vocabulary of the dataset
@@ -37,6 +42,16 @@ were retrieved using the method above - "Recipe Retrieval w/ Higher Number Anti-
 - [Infomap](https://pypi.org/project/infomap/);
 - [Density-Based Spatial Clustering of Applications with Noise](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html);
 - [Mean Shift](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.MeanShift.html).
+
+### Supervised Learning
+
+- [Support Vector Machine](https://scikit-learn.org/stable/modules/svm.html)
+- [Random Forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
+
+### Model Validation
+
+- [Stratified K-Fold Cross Validation](https://scikit-learn.org/stable/modules/cross_validation.html)
+- [Leave One Out Cross Validation](https://scikit-learn.org/stable/modules/cross_validation.html)
 
 ### Benchmark
 
