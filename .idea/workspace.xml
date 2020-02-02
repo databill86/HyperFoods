@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="120317de-c329-4bc5-9d78-db71c0ac084a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HyperFoods.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/HyperFoods.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/algorithms/view/matplotlib_designed.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/view/matplotlib_designed.py" afterDir="false" />
@@ -392,7 +393,7 @@
       <workItem from="1579833032173" duration="286000" />
       <workItem from="1579833418486" duration="1286000" />
       <workItem from="1579836065830" duration="602000" />
-      <workItem from="1580669813948" duration="1431000" />
+      <workItem from="1580669813948" duration="1651000" />
     </task>
     <task id="LOCAL-00001" summary="2nd Commit">
       <created>1574301115856</created>
@@ -694,7 +695,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Enhanced Visualization Tools" />
     <MESSAGE value="Recipe Retrieval Algorithm Benchmarked" />
     <MESSAGE value="Building Recipe Recommendation System" />
     <MESSAGE value="Enhanced Code Readability" />
@@ -719,7 +719,8 @@
     <MESSAGE value="Added Thesis PDF" />
     <MESSAGE value="Efficiency Improvements" />
     <MESSAGE value="No Change Experiment" />
-    <option name="LAST_COMMIT_MESSAGE" value="No Change Experiment" />
+    <MESSAGE value="SVM, Random Forest, Validation &amp; PyPy" />
+    <option name="LAST_COMMIT_MESSAGE" value="SVM, Random Forest, Validation &amp; PyPy" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Inspections" timestamp="1578781755724">
@@ -799,11 +800,11 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1577996570732" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1580670733692">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1580671895449">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
     <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1580670733692" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.23.1680.973@0.23.1680.973" timestamp="1579748471258" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.23.1680.973@0.23.1680.973" timestamp="1580671895449" />
     <state x="100" y="100" width="1480" height="850" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1577679008417">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
