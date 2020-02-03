@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="120317de-c329-4bc5-9d78-db71c0ac084a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/HyperFoods-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/HyperFoods-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HyperFoods.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/HyperFoods.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/parsing/packaging_tutorial/.ipynb_checkpoints/LICENSE-checkpoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/parsing/packaging_tutorial/.ipynb_checkpoints/README-checkpoint.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/parsing/packaging_tutorial/.ipynb_checkpoints/setup-checkpoint.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/parsing/packaging_tutorial/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/parsing/packaging_tutorial/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/parsing/packaging_tutorial/build/lib/example_pkg/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/parsing/packaging_tutorial/dist/recipe_parser-0.0.1-py2-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/parsing/packaging_tutorial/dist/recipe_parser-0.0.1.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/parsing/packaging_tutorial/example_pkg/.ipynb_checkpoints/__init__-checkpoint.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/parsing/packaging_tutorial/example_pkg/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/parsing/packaging_tutorial/recipe_parser.egg-info/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/parsing/packaging_tutorial/recipe_parser.egg-info/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/parsing/packaging_tutorial/recipe_parser.egg-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/parsing/packaging_tutorial/recipe_parser.egg-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/parsing/packaging_tutorial/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bfg-1.13.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-    </list>
+    <list default="true" id="120317de-c329-4bc5-9d78-db71c0ac084a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -371,7 +350,7 @@
       <workItem from="1579836065830" duration="602000" />
       <workItem from="1580669813948" duration="1898000" />
       <workItem from="1580672341545" duration="1053000" />
-      <workItem from="1580688658813" duration="453000" />
+      <workItem from="1580688658813" duration="539000" />
     </task>
     <task id="LOCAL-00001" summary="2nd Commit">
       <created>1574301115856</created>
@@ -667,7 +646,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580672007433</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="PyPy Package Updated">
+      <created>1580698907949</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1580698907949</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -687,7 +673,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Recipe Retrieval Algorithm Benchmarked" />
     <MESSAGE value="Building Recipe Recommendation System" />
     <MESSAGE value="Enhanced Code Readability" />
     <MESSAGE value="Units Retrieved from Dataset" />
@@ -712,7 +697,8 @@
     <MESSAGE value="Efficiency Improvements" />
     <MESSAGE value="No Change Experiment" />
     <MESSAGE value="SVM, Random Forest, Validation &amp; PyPy" />
-    <option name="LAST_COMMIT_MESSAGE" value="SVM, Random Forest, Validation &amp; PyPy" />
+    <MESSAGE value="PyPy Package Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="PyPy Package Updated" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Inspections" timestamp="1578781755724">
@@ -735,10 +721,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="528" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1577204594585" />
-    <state x="559" y="221" key="CommitChangelistDialog2" timestamp="1580672005458">
+    <state x="559" y="221" key="CommitChangelistDialog2" timestamp="1580698892897">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="559" y="221" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1580672005458" />
+    <state x="559" y="221" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1580698892897" />
     <state x="559" y="201" key="CommitChangelistDialog2/0.23.1680.973@0.23.1680.973" timestamp="1579837596190" />
     <state x="168" y="94" key="DiffContextDialog" timestamp="1578782415613">
       <screen x="0" y="0" width="1680" height="1050" />
