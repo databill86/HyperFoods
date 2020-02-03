@@ -62,3 +62,5 @@ were retrieved using the method above - "Recipe Retrieval w/ Higher Number Anti-
 Kirill Veselkov ([Imperial College London](https://www.imperial.ac.uk/people/kirill.veselkov04)) | Michael Bronstein ([Imperial College London](https://www.imperial.ac.uk/people/m.bronstein))
 
 Roadmap -> [Wiki](https://github.com/warcraft12321/HyperFoods/wiki)
+
+[![DOI](https://zenodo.org/badge/217769774.svg)](https://zenodo.org/badge/latestdoi/217769774)
