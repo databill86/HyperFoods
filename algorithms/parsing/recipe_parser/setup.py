@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="recipe_parser", # Replace with your own username
-    version="0.0.1",
+    name="recipe_parser",  # Replace with your own username
+    version="0.1",
     author="Luis Rita",
     author_email="l.rita19@imperial.ac.uk",
     description="Retrieves ingredients, quantities and units from any recipe.",
@@ -18,5 +18,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
+    install_requires=[],
     python_requires='>=3.6',
+    license='MIT'
 )

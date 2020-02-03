@@ -1,7 +1,7 @@
 # MRes Biomedical Research
 [warcraft12321.github.io/HyperFoods](https://warcraft12321.github.io/HyperFoods)
 
-## HyperFoods: Machine intelligent mapping of cancer-beating molecules in foods
+## HyperFoods
 
 ### Objectives
 
