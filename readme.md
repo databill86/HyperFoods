@@ -59,7 +59,7 @@ were retrieved using the method above - "Recipe Retrieval w/ Higher Number Anti-
 - [F1 Score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html).
 
 ### Supervisors
-Kirill Veselkov ([Imperial College London](https://www.imperial.ac.uk/people/kirill.veselkov04)) | Michael Bronstein ([Imperial College London](https://www.imperial.ac.uk/people/m.bronstein))
+[Kirill Veselkov](https://www.imperial.ac.uk/people/kirill.veselkov04) (Imperial College London) | [Michael Bronstein](https://www.imperial.ac.uk/people/m.bronstein) (Imperial College London)
 
 Roadmap -> [Wiki](https://github.com/warcraft12321/HyperFoods/wiki)
 
