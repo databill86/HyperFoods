@@ -68,6 +68,8 @@ app.get('/run/:url', function (req, res) {
     let spawn = require('child_process').spawn;
     let py = spawn('python', ['demo.py', binaryToString(req.params.url)]);
 
+    dataString = dataString + "hello";
+
     py.stdin.write(JSON.stringify(url));
     py.stdin.end();
 
@@ -94,7 +96,7 @@ app.get('/run/:url', function (req, res) {
   wss.clients.forEach((client) => {
 //dataString = dataString + "hello";
     //client.send(dataString);
-      dataString = dataString +  "hello";
+      //dataString = dataString +  "hello";
     client.send(dataString);
     console.log(dataString)
   });
