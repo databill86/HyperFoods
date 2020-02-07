@@ -6,3 +6,5 @@ modelbest.ckpt filter=lfs diff=lfs merge=lfs -text
 finalized_model.sav filter=lfs diff=lfs merge=lfs -text
 layer11_corrected.json filter=lfs diff=lfs merge=lfs -text
 randomForestClassifier.sav filter=lfs diff=lfs merge=lfs -text
+data/recipe1M+/noEmptyIngredientsOrInstructions/modified_recipes_data.json filter=lfs diff=lfs merge=lfs -text
+data/recipe1M+/noEmptyIngredientsOrInstructions/noEmpty(IngredientOrInstruction)Recipes/modified_modified_recipes_data.json filter=lfs diff=lfs merge=lfs -text
