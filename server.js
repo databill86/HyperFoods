@@ -97,7 +97,7 @@ app.get('/run/:url', function (req, res) {
     client.send(dataString);
     console.log(dataString)
   });
-}, 10000);
+}, 1000);
 
 /*
 app.get('/', (req, res) => {

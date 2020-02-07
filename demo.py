@@ -45,7 +45,8 @@ ids = ids[:1]
 ids.append("hello")
 urls.append(sys.argv[1])
 
-#print(urls)
+print(urls)
+sys.stdout.flush()
 #print(ids)
 #print(sys.argv[1])
 
@@ -134,12 +135,12 @@ for i in range(numgens):
 
     outs, valid = prepare_output(recipe_ids[0], ingr_ids[0], ingrs_vocab, vocab)
 
-    print(outs['ingrs'])
+    #print(outs['ingrs'])
     #print(final_output)
 
     final_output[ids[0]] = outs['ingrs']
 
-sys.stdout.flush()
+#sys.stdout.flush()
 
 '''
 if valid['is_valid'] or show_anyways:
