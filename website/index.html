@@ -126,4 +126,17 @@
 
 </script>
 
+<script>
+    // ---------------------------------------------- Create a WebSocket client ----------------------------------------------
+
+var HOST = location.origin.replace(/^http/, 'ws');
+var ws = new WebSocket(HOST);
+var el;
+
+ws.onmessage = function (event) {
+  el = document.getElementById('ingredients');
+  el.innerHTML = 'Server time: ' + event.data;
+};
+</script>
+
 </html>

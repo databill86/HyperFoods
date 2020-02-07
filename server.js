@@ -8,8 +8,31 @@ const cmd = require('node-cmd');
 const app = express();
 
 app.use(express.static('website'));
-app.listen(process.env.PORT || 3000);
 
+const server = app.listen(process.env.PORT || 3000);
+
+// ---------------------------------------------- Create Websocket Server ----------------------------------------------
+
+const { Server } = require('ws');
+
+const wss = new Server({ server });
+
+// ---------------------------------------------- Handle connections ----------------------------------------------
+
+wss.on('connection', (ws) => {
+  console.log('Client connected');
+  ws.on('close', () => console.log('Client disconnected'));
+});
+
+// ---------------------------------------------- Broadcast updates ----------------------------------------------
+/*
+setInterval(() => {
+  wss.clients.forEach((client) => {
+
+    client.send(new Date().toTimeString());
+  });
+}, 1000);
+*/
 // ---------------------------------------------- RUN ----------------------------------------------
 
 url = [];
@@ -62,6 +85,13 @@ app.get('/run/:url', function (req, res) {
         console.log(dataString);
         //console.log('Sum of numbers=',dataString);
     });
+
+    setInterval(() => {
+  wss.clients.forEach((client) => {
+//dataString = dataString + "hello";
+    client.send(dataString);
+  });
+}, 10000);
 
 });
 /*
