@@ -4,14 +4,14 @@
 # ## Inverse Cooking: Recipe Generation from Food Images
 
 # import torch
-# import os
+import os
 # from src.args import get_parser
-# import pickle
+import pickle
 # from src.model import get_model
 # from torchvision import transforms
 # from src.utils.output_utils import prepare_output
 # from PIL import Image
-# import time
+import time
 import sys
 
 # import requests
