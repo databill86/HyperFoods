@@ -94,6 +94,7 @@ app.get('/run/:url', function (req, res) {
   wss.clients.forEach((client) => {
 //dataString = dataString + "hello";
     //client.send(dataString);
+      dataString = dataString +  "hello";
     client.send(dataString);
     console.log(dataString)
   });
