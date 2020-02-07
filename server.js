@@ -75,7 +75,7 @@ app.get('/run/:url', function (req, res) {
         //console.log("hi");
         //console.log(data);
         dataString += data.toString();
-        res.send(dataString);
+        //res.send(dataString);
 
     });
 
@@ -86,14 +86,19 @@ app.get('/run/:url', function (req, res) {
         //console.log('Sum of numbers=',dataString);
     });
 
+    res.send();
+
+});
+
     setInterval(() => {
   wss.clients.forEach((client) => {
 //dataString = dataString + "hello";
+    //client.send(dataString);
     client.send(dataString);
+    console.log(dataString)
   });
 }, 10000);
 
-});
 /*
 app.get('/', (req, res) => {
   console.log(req.query)
