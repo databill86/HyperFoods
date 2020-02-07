@@ -68,12 +68,11 @@ app.get('/run/:url', function (req, res) {
     let spawn = require('child_process').spawn;
     let py = spawn('python', ['demo.py', binaryToString(req.params.url)]);
 
-    dataString = dataString + "hello";
-
     py.stdin.write(JSON.stringify(url));
     py.stdin.end();
 
     py.stdout.on('data', function(data){
+        dataString = dataString + "hello";
         //console.log("hi");
         //console.log(data);
         dataString += data.toString();
