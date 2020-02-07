@@ -3,18 +3,19 @@
 
 # ## Inverse Cooking: Recipe Generation from Food Images
 
-import torch
-import os
-from src.args import get_parser
-import pickle
-from src.model import get_model
-from torchvision import transforms
-from src.utils.output_utils import prepare_output
-from PIL import Image
-import time
+# import torch
+# import os
+# from src.args import get_parser
+# import pickle
+# from src.model import get_model
+# from torchvision import transforms
+# from src.utils.output_utils import prepare_output
+# from PIL import Image
+# import time
 import sys
-import requests
-from io import BytesIO
+
+# import requests
+# from io import BytesIO
 
 urls = []
 ids = []
@@ -24,8 +25,8 @@ urls.append(sys.argv[1])
 
 print(urls)
 sys.stdout.flush()
-#print(ids)
-#print(sys.argv[1])
+# print(ids)
+# print(sys.argv[1])
 
 # -----------------------------------------
 '''
