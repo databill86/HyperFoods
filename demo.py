@@ -5,7 +5,7 @@
 
 # import torch
 import os
-from src.args import get_parser
+# from src.args import get_parser
 import pickle
 from src.model import get_model
 # from torchvision import transforms
