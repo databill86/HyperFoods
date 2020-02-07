@@ -16,31 +16,8 @@ import sys
 import requests
 from io import BytesIO
 
-# Set ```data_dir``` to the path including vocabularies and model checkpoint
-'''
-f = open('./data/id_url.json')
-id_url = (json.load(f))  # [0:100]
-f.close()
-'''
-
 urls = []
 ids = []
-
-'''
-keys = list(id_url.keys())
-
-for i in range(0, len(id_url)):
-
-    for j in range(0, len(id_url[keys[i]])):
-
-        urls.append(id_url[keys[i]][j])
-
-        if id_url[keys[i]][j]:
-            ids.append(keys[i])
-
-urls = urls[:0]
-ids = ids[:1]
-'''
 
 ids.append("hello")
 urls.append(sys.argv[1])
@@ -51,13 +28,16 @@ sys.stdout.flush()
 #print(sys.argv[1])
 
 # -----------------------------------------
-
+'''
 data_dir = './data'
 
 # code will run in gpu if available and if the flag is set to True, else it will run on cpu
 use_gpu = True
 device = torch.device('cuda' if torch.cuda.is_available() and use_gpu else 'cpu')
 map_loc = None if torch.cuda.is_available() and use_gpu else 'cpu'
+
+print(device)
+print(map_loc)
 
 # code below was used to save vocab files so that they can be loaded without Vocabulary class
 # ingrs_vocab = pickle.load(open(os.path.join(data_dir, 'final_recipe1m_vocab_ingrs.pkl'), 'rb'))
@@ -141,7 +121,7 @@ for i in range(numgens):
     final_output[ids[0]] = outs['ingrs']
 
 #sys.stdout.flush()
-
+'''
 '''
 if valid['is_valid'] or show_anyways:
 

@@ -97,7 +97,7 @@ app.get('/run/:url', function (req, res) {
     //client.send(dataString);
       //dataString = dataString +  "hello";
     client.send(dataString);
-    console.log(dataString)
+    //console.log(dataString)
   });
 }, 1000);
 
