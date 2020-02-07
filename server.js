@@ -15,6 +15,8 @@ app.listen(process.env.PORT || 3000);
 url = [];
 let dataString = '';
 
+// ---------------------------------------------- From Binary to String Function ----------------------------------------------
+
 function binaryToString(str) {
     // Removes the spaces from the binary string
     str = str.replace(/\s+/g, '');
@@ -31,6 +33,8 @@ function binaryToString(str) {
     return binaryCode.join("");
 }
 
+// ---------------------------------------------- Server Receiving Image URL ----------------------------------------------
+
 // Sending data back to interface that resulted from community finding process.
 app.get('/run/:url', function (req, res) {
 
@@ -45,10 +49,10 @@ app.get('/run/:url', function (req, res) {
     py.stdin.end();
 
     py.stdout.on('data', function(data){
-        console.log("hi");
-        console.log(data);
+        //console.log("hi");
+        //console.log(data);
         dataString += data.toString();
-        res.send();
+        res.send(dataString);
 
     });
 
@@ -56,14 +60,16 @@ app.get('/run/:url', function (req, res) {
     py.stdout.on('end', function(){
 
         console.log(dataString);
-        console.log('Sum of numbers=',dataString);
+        //console.log('Sum of numbers=',dataString);
     });
 
 });
-
+/*
 app.get('/', (req, res) => {
   console.log(req.query)
 });
+
+ */
 /*
 app.get('/run2/:url', function (req, res) {
 

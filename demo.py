@@ -22,8 +22,10 @@ f = open('./data/id_url.json')
 id_url = (json.load(f))  # [0:100]
 f.close()
 '''
+
 urls = []
 ids = []
+
 '''
 keys = list(id_url.keys())
 
@@ -70,8 +72,6 @@ ingr_vocab_size = len(ingrs_vocab)
 instrs_vocab_size = len(vocab)
 output_dim = instrs_vocab_size
 
-# print(instrs_vocab_size, ingr_vocab_size)
-
 t = time.time()
 
 sys.argv = ['']
@@ -94,8 +94,6 @@ transf_list_batch = [transforms.ToTensor(), transforms.Normalize((0.485, 0.456, 
                                                                  (0.229, 0.224, 0.225))]
 to_input_transf = transforms.Compose(transf_list_batch)
 
-print(to_input_transf)
-
 greedy = [True, False, False, False]
 beam = [-1, -1, -1, -1]
 temperature = 1.0
@@ -108,46 +106,38 @@ numgens = 1
 use_urls = True  # set to true to load images from demo_urls instead of those in test_imgs folder
 show_anyways = False  # if True, it will show the recipe even if it's not valid
 
-demo_files = urls
-
-ii = -1
 final_output = {}
 
-for img_file in demo_files:
+response = requests.get(urls[0])
+image = Image.open(BytesIO(response.content))
 
-    if use_urls:
-        response = requests.get(img_file)
-        image = Image.open(BytesIO(response.content))
+transf_list = [transforms.Resize(256), transforms.CenterCrop(224)]
+transform = transforms.Compose(transf_list)
 
-    transf_list = [transforms.Resize(256), transforms.CenterCrop(224)]
-    transform = transforms.Compose(transf_list)
+image_transf = transform(image)
+image_tensor = to_input_transf(image_transf).unsqueeze(0).to(device)
 
-    image_transf = transform(image)
-    image_tensor = to_input_transf(image_transf).unsqueeze(0).to(device)
+#plt.imshow(image_transf)
+#plt.axis('off')
+#plt.show()
+#plt.close()
 
-    #plt.imshow(image_transf)
-    #plt.axis('off')
-    #plt.show()
-    #plt.close()
+num_valid = 1
 
-    num_valid = 1
+for i in range(numgens):
+    with torch.no_grad():
+        outputs = model.sample(image_tensor, greedy=greedy[i],
+                                temperature=temperature, beam=beam[i], true_ingrs=None)
 
-    ii += 1
+    ingr_ids = outputs['ingr_ids'].cpu().numpy()
+    recipe_ids = outputs['recipe_ids'].cpu().numpy()
 
-    for i in range(numgens):
-        with torch.no_grad():
-            outputs = model.sample(image_tensor, greedy=greedy[i],
-                                   temperature=temperature, beam=beam[i], true_ingrs=None)
+    outs, valid = prepare_output(recipe_ids[0], ingr_ids[0], ingrs_vocab, vocab)
 
-        ingr_ids = outputs['ingr_ids'].cpu().numpy()
-        recipe_ids = outputs['recipe_ids'].cpu().numpy()
+    print(outs['ingrs'])
+    #print(final_output)
 
-        outs, valid = prepare_output(recipe_ids[0], ingr_ids[0], ingrs_vocab, vocab)
-
-        #print(outs['ingrs'])
-        #print(final_output)
-
-        final_output[ids[ii]] = outs['ingrs']
+    final_output[ids[0]] = outs['ingrs']
 
 sys.stdout.flush()
 

@@ -5,7 +5,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/HyperFoods-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/HyperFoods-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HyperFoods.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/HyperFoods.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/demo2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inversecooking-master/scrape_pdf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inversecooking-master/src/demo.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/inversecooking-master/src/demo.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrape_pdf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -363,7 +370,15 @@
       <workItem from="1580923721069" duration="11000" />
       <workItem from="1580923741627" duration="198000" />
       <workItem from="1580929885547" duration="184000" />
-      <workItem from="1580953575503" duration="1100000" />
+      <workItem from="1580953575503" duration="1640000" />
+      <workItem from="1580996025093" duration="1260000" />
+      <workItem from="1581019734874" duration="1209000" />
+      <workItem from="1581030029465" duration="3075000" />
+      <workItem from="1581042102720" duration="2000" />
+      <workItem from="1581042120713" duration="628000" />
+      <workItem from="1581043050691" duration="726000" />
+      <workItem from="1581044159207" duration="1100000" />
+      <workItem from="1581045405104" duration="848000" />
     </task>
     <task id="LOCAL-00001" summary="2nd Commit">
       <created>1574301115856</created>
@@ -680,7 +695,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580700064817</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Dask Introduced. General Bug Fixes.">
+      <created>1580960156281</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1580960156281</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -700,7 +722,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Enhanced Code Readability" />
     <MESSAGE value="Units Retrieved from Dataset" />
     <MESSAGE value="Recipe1M+ Dataset Analysis" />
     <MESSAGE value="Recipe1M+ Dataset Quantities Corrected" />
@@ -725,7 +746,8 @@
     <MESSAGE value="SVM, Random Forest, Validation &amp; PyPy" />
     <MESSAGE value="PyPy Package Updated" />
     <MESSAGE value="DOI Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="DOI Added" />
+    <MESSAGE value="Dask Introduced. General Bug Fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Dask Introduced. General Bug Fixes." />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Inspections" timestamp="1578781755724">
@@ -748,11 +770,11 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="528" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580923725215" />
-    <state x="559" y="221" key="CommitChangelistDialog2" timestamp="1580700063463">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="559" y="201" key="CommitChangelistDialog2" timestamp="1580960139593">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
     <state x="559" y="221" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1580700063463" />
-    <state x="559" y="201" key="CommitChangelistDialog2/0.23.1680.973@0.23.1680.973" timestamp="1579837596190" />
+    <state x="559" y="201" key="CommitChangelistDialog2/0.23.1680.973@0.23.1680.973" timestamp="1580960139593" />
     <state x="168" y="94" key="DiffContextDialog" timestamp="1578782415613">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -805,11 +827,11 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1577996570732" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1580700067609">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1580960178700">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
     <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1580700067609" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.23.1680.973@0.23.1680.973" timestamp="1580671895449" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.23.1680.973@0.23.1680.973" timestamp="1580960178700" />
     <state x="100" y="100" width="1480" height="850" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1577679008417">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
