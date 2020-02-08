@@ -10,3 +10,4 @@ data/recipe1M+/noEmptyIngredientsOrInstructions/modified_recipes_data.json filte
 data/recipe1M+/noEmptyIngredientsOrInstructions/noEmpty(IngredientOrInstruction)Recipes/modified_modified_recipes_data.json filter=lfs diff=lfs merge=lfs -text
 modified_recipes_data.json filter=lfs diff=lfs merge=lfs -text
 modified_modified_recipes_data.json filter=lfs diff=lfs merge=lfs -text
+_pywrap_tensorflow_internal.so filter=lfs diff=lfs merge=lfs -text
