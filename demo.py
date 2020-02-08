@@ -116,7 +116,7 @@ for i in range(numgens):
 
     outs, valid = prepare_output(recipe_ids[0], ingr_ids[0], ingrs_vocab, vocab)
 
-    #print(outs['ingrs'])
+    print(outs['ingrs'])
     #print(final_output)
 
     final_output[ids[0]] = outs['ingrs']
