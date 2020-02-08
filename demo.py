@@ -15,7 +15,7 @@ import time
 import sys
 
 # import requests
-# from io import BytesIO
+from io import BytesIO
 
 urls = []
 ids = []
