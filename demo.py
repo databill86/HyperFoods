@@ -3,7 +3,7 @@
 
 # ## Inverse Cooking: Recipe Generation from Food Images
 
-# import torch
+import torch
 import os
 # from src.args import get_parser
 import pickle
@@ -14,7 +14,7 @@ import pickle
 import time
 import sys
 
-import requests
+# import requests
 from io import BytesIO
 
 urls = []
