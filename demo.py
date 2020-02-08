@@ -8,13 +8,13 @@ import os
 # from src.args import get_parser
 import pickle
 # from src.model import get_model
-from torchvision import transforms
+# from torchvision import transforms
 # from src.utils.output_utils import prepare_output
 # from PIL import Image
 import time
 import sys
 
-# import requests
+import requests
 from io import BytesIO
 
 urls = []
