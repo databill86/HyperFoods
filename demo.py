@@ -7,7 +7,7 @@
 import os
 # from src.args import get_parser
 import pickle
-# from src.model import get_model
+from src.model import get_model
 # from torchvision import transforms
 # from src.utils.output_utils import prepare_output
 # from PIL import Image
@@ -24,12 +24,12 @@ ids.append("hello")
 urls.append(sys.argv[1])
 
 print(urls)
-#sys.stdout.flush()
+sys.stdout.flush()
 # print(ids)
 # print(sys.argv[1])
 
 # -----------------------------------------
-
+'''
 data_dir = './data'
 
 # code will run in gpu if available and if the flag is set to True, else it will run on cpu
@@ -121,8 +121,8 @@ for i in range(numgens):
 
     final_output[ids[0]] = outs['ingrs']
 
-sys.stdout.flush()
-
+# sys.stdout.flush()
+'''
 '''
 if valid['is_valid'] or show_anyways:
 
