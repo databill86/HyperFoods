@@ -14,7 +14,7 @@ import pickle
 import time
 import sys
 
-# import requests
+import requests
 from io import BytesIO
 
 urls = []
