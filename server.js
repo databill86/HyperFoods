@@ -67,7 +67,6 @@ app.get('/run/:url', function (req, res) {
 
     let options = {
   mode: 'text',
-        pythonPath: 'venv/bin/python3.6',
   pythonOptions: ['-u'], // get print results in real-time
   scriptPath: './',
   args: [binaryToString(req.params.url)]
