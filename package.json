@@ -15,6 +15,7 @@
     "npm": "^6.9.0",
     "npm-check-updates": "^3.1.1",
     "perf_hooks": "^0.0.1",
+    "python-shell": "^1.0.8",
     "require": "^2.4.20",
     "utf-8-validate": "^5.0.2",
     "ws": "^7.2.1"

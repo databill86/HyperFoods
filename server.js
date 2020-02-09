@@ -11,6 +11,8 @@ app.use(express.static('website'));
 
 const server = app.listen(process.env.PORT || 3000);
 
+let {PythonShell} = require('python-shell');
+
 // ---------------------------------------------- Create Websocket Server ----------------------------------------------
 
 const { Server } = require('ws');
@@ -61,6 +63,23 @@ function binaryToString(str) {
 // Sending data back to interface that resulted from community finding process.
 app.get('/run/:url', function (req, res) {
 
+    // ------------------------------
+
+    let options = {
+  mode: 'text',
+  pythonOptions: ['-u'], // get print results in real-time
+  scriptPath: './',
+  args: [binaryToString(req.params.url)]
+};
+
+PythonShell.run('demo.py', options, function (err, results) {
+  if (err) throw err;
+  // results is an array consisting of messages collected during execution
+  console.log('results: %j', results);
+});
+
+    // ------------------------------
+
     console.log(binaryToString(req.params.url));
 
     url.push(binaryToString(req.params.url));
@@ -100,6 +119,12 @@ app.get('/run/:url', function (req, res) {
     //console.log(dataString)
   });
 }, 1000);
+
+    //  ----------------------------
+
+
+
+    // ----------------------------------------------
 
 /*
 app.get('/', (req, res) => {
