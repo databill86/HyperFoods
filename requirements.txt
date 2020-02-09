@@ -1,11 +1,5 @@
 numpy
 scipy
 matplotlib
-nltk
 Pillow
-tqdm
-lmdb
-tensorflow
-tensorboardX
 requests
-jupyter
