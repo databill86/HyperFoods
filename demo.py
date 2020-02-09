@@ -23,8 +23,8 @@ ids = []
 ids.append("hello")
 urls.append(sys.argv[1])
 
-print(urls)
-sys.stdout.flush()
+# print(urls)
+# sys.stdout.flush()
 # print(ids)
 # print(sys.argv[1])
 
@@ -121,7 +121,7 @@ for i in range(numgens):
 
     final_output[ids[0]] = outs['ingrs']
 
-# sys.stdout.flush()
+sys.stdout.flush()
 
 '''
 if valid['is_valid'] or show_anyways:
