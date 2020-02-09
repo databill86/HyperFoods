@@ -64,7 +64,7 @@ function binaryToString(str) {
 app.get('/run/:url', function (req, res) {
 
     // ------------------------------
-/*
+
     let options = {
   mode: 'text',
   pythonOptions: ['-u'], // get print results in real-time
@@ -74,12 +74,14 @@ app.get('/run/:url', function (req, res) {
 
 PythonShell.run('demo.py', options, function (err, results) {
   if (err) throw err;
+
   // results is an array consisting of messages collected during execution
   console.log('results: %j', results);
+  //res.send();
 });
-*/
-    // ------------------------------
 
+    // ------------------------------
+/*
     console.log(binaryToString(req.params.url));
 
     url.push(binaryToString(req.params.url));
@@ -90,7 +92,8 @@ PythonShell.run('demo.py', options, function (err, results) {
     py.stdin.write(JSON.stringify(url));
     py.stdin.end();
 
-    py.stdout.on('data', function(data){
+    py.stdout.on('data', function(err, data){
+        if (err) throw err;
         dataString = dataString + "hello";
         //console.log("hi");
         //console.log(data);
@@ -100,8 +103,8 @@ PythonShell.run('demo.py', options, function (err, results) {
     });
 
 
-    py.stdout.on('end', function(){
-
+    py.stdout.on('end', function(err){
+        if (err) throw err;
         console.log(dataString);
         //console.log('Sum of numbers=',dataString);
     });
@@ -117,7 +120,7 @@ PythonShell.run('demo.py', options, function (err, results) {
     console.log(dataString)
   });
 }, 1000);
-
+*/
 });
 
 /*

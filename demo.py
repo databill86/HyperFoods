@@ -59,7 +59,7 @@ output_dim = instrs_vocab_size
 t = time.time()
 
 sys.argv = ['']
-del sys
+# del sys
 args = get_parser()
 args.maxseqlen = 15
 args.ingrs_only = False
