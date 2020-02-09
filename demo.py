@@ -37,8 +37,8 @@ use_gpu = True
 device = torch.device('cuda' if torch.cuda.is_available() and use_gpu else 'cpu')
 map_loc = None if torch.cuda.is_available() and use_gpu else 'cpu'
 
-print(device)
-print(map_loc)
+#print(device)
+#print(map_loc)
 
 # code below was used to save vocab files so that they can be loaded without Vocabulary class
 # ingrs_vocab = pickle.load(open(os.path.join(data_dir, 'final_recipe1m_vocab_ingrs.pkl'), 'rb'))
@@ -74,7 +74,10 @@ model.recipe_only = False
 
 transf_list_batch = [transforms.ToTensor(), transforms.Normalize((0.485, 0.456, 0.406),
                                                                  (0.229, 0.224, 0.225))]
+
 to_input_transf = transforms.Compose(transf_list_batch)
+
+print(to_input_transf)
 
 greedy = [True, False, False, False]
 beam = [-1, -1, -1, -1]
