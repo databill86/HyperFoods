@@ -64,7 +64,7 @@ function binaryToString(str) {
 app.get('/run/:url', function (req, res) {
 
     // ------------------------------
-
+/*
     let options = {
   mode: 'text',
   pythonOptions: ['-u'], // get print results in real-time
@@ -77,7 +77,7 @@ PythonShell.run('demo.py', options, function (err, results) {
   // results is an array consisting of messages collected during execution
   console.log('results: %j', results);
 });
-
+*/
     // ------------------------------
 
     console.log(binaryToString(req.params.url));
@@ -95,7 +95,7 @@ PythonShell.run('demo.py', options, function (err, results) {
         //console.log("hi");
         //console.log(data);
         dataString += data.toString();
-        //res.send(dataString);
+        res.send(dataString);
 
     });
 
@@ -106,10 +106,10 @@ PythonShell.run('demo.py', options, function (err, results) {
         //console.log('Sum of numbers=',dataString);
     });
 
-    res.send();
+    //res.send();
 
 });
-
+/*
     setInterval(() => {
   wss.clients.forEach((client) => {
 //dataString = dataString + "hello";
@@ -119,7 +119,7 @@ PythonShell.run('demo.py', options, function (err, results) {
     //console.log(dataString)
   });
 }, 1000);
-
+*/
     //  ----------------------------
 
 
