@@ -29,7 +29,7 @@ sys.stdout.flush()
 # print(sys.argv[1])
 
 # -----------------------------------------
-'''
+
 data_dir = './data'
 
 # code will run in gpu if available and if the flag is set to True, else it will run on cpu
@@ -122,7 +122,7 @@ for i in range(numgens):
     final_output[ids[0]] = outs['ingrs']
 
 # sys.stdout.flush()
-'''
+
 '''
 if valid['is_valid'] or show_anyways:
 
