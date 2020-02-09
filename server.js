@@ -77,7 +77,7 @@ PythonShell.run('demo.py', options, function (err, results) {
 
   // results is an array consisting of messages collected during execution
   console.log('results: %j', results);
-  //res.send();
+  res.send();
 });
 
     // ------------------------------
