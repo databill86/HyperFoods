@@ -20,12 +20,12 @@ const { Server } = require('ws');
 const wss = new Server({ server });
 
 // ---------------------------------------------- Handle connections ----------------------------------------------
-/*
+
 wss.on('connection', (ws) => {
   console.log('Client connected');
   ws.on('close', () => console.log('Client disconnected'));
 });
-*/
+
 // ---------------------------------------------- Broadcast updates ----------------------------------------------
 /*
 setInterval(() => {
@@ -95,7 +95,7 @@ PythonShell.run('demo.py', options, function (err, results) {
         //console.log("hi");
         //console.log(data);
         dataString += data.toString();
-        res.send(dataString);
+        //res.send(dataString);
 
     });
 
@@ -106,8 +106,8 @@ PythonShell.run('demo.py', options, function (err, results) {
         //console.log('Sum of numbers=',dataString);
     });
 
-    //res.send();
-/*
+    res.send();
+
     setInterval(() => {
   wss.clients.forEach((client) => {
 //dataString = dataString + "hello";
@@ -117,7 +117,7 @@ PythonShell.run('demo.py', options, function (err, results) {
     console.log(dataString)
   });
 }, 1000);
-*/
+
 });
 
 /*

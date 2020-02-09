@@ -50,6 +50,8 @@ map_loc = None if torch.cuda.is_available() and use_gpu else 'cpu'
 ingrs_vocab = pickle.load(open(os.path.join(data_dir, 'ingr_vocab.pkl'), 'rb'))
 vocab = pickle.load(open(os.path.join(data_dir, 'instr_vocab.pkl'), 'rb'))
 
+# print(ingrs_vocab)
+
 ingr_vocab_size = len(ingrs_vocab)
 instrs_vocab_size = len(vocab)
 output_dim = instrs_vocab_size
@@ -76,8 +78,6 @@ transf_list_batch = [transforms.ToTensor(), transforms.Normalize((0.485, 0.456, 
                                                                  (0.229, 0.224, 0.225))]
 
 to_input_transf = transforms.Compose(transf_list_batch)
-
-print(to_input_transf)
 
 greedy = [True, False, False, False]
 beam = [-1, -1, -1, -1]
