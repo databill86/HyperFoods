@@ -72,9 +72,6 @@ model.recipe_only = False
 # print('loaded model')
 # print("Elapsed time:", time.time() - t)
 
-print("Elapsed time:", time.time() - t)
-sys.stdout.flush()
-
 transf_list_batch = [transforms.ToTensor(), transforms.Normalize((0.485, 0.456, 0.406),
                                                                  (0.229, 0.224, 0.225))]
 
@@ -120,12 +117,12 @@ for i in range(numgens):
 
     outs, valid = prepare_output(recipe_ids[0], ingr_ids[0], ingrs_vocab, vocab)
 
-    #print(outs['ingrs'])
+    print(outs['ingrs'])
     #print(final_output)
 
     final_output[ids[0]] = outs['ingrs']
 
-#sys.stdout.flush()
+sys.stdout.flush()
 
 '''
 if valid['is_valid'] or show_anyways:

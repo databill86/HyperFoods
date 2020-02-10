@@ -1,0 +1,11 @@
+numpy==1.17.4
+scipy==1.4.1
+http://download.pytorch.org/whl/cpu/torch-0.4.1-cp36-cp36m-linux_x86_64.whl
+torchvision==0.2.1
+nltk==3.4.5
+Pillow==6.2.1
+tqdm==4.42.1
+lmdb
+tensorflow
+tensorboardX==2.0
+requests==2.22.0
