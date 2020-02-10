@@ -50,9 +50,6 @@ map_loc = None if torch.cuda.is_available() and use_gpu else 'cpu'
 ingrs_vocab = pickle.load(open(os.path.join(data_dir, 'ingr_vocab.pkl'), 'rb'))
 vocab = pickle.load(open(os.path.join(data_dir, 'instr_vocab.pkl'), 'rb'))
 
-print(ingrs_vocab)
-sys.stdout.flush()
-
 ingr_vocab_size = len(ingrs_vocab)
 instrs_vocab_size = len(vocab)
 output_dim = instrs_vocab_size
@@ -74,6 +71,9 @@ model.ingrs_only = False
 model.recipe_only = False
 # print('loaded model')
 # print("Elapsed time:", time.time() - t)
+
+print("Elapsed time:", time.time() - t)
+sys.stdout.flush()
 
 transf_list_batch = [transforms.ToTensor(), transforms.Normalize((0.485, 0.456, 0.406),
                                                                  (0.229, 0.224, 0.225))]
