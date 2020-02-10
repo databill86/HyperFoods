@@ -30,7 +30,7 @@ urls.append(sys.argv[1])
 
 # -----------------------------------------
 
-data_dir = './data'
+data_dir = './data/'
 
 # code will run in gpu if available and if the flag is set to True, else it will run on cpu
 use_gpu = True
@@ -64,7 +64,7 @@ args.ingrs_only = False
 model = get_model(args, ingr_vocab_size, instrs_vocab_size)
 # Load the trained model parameters
 model_path = os.path.join(data_dir, 'modelbest.ckpt')
-model.load_state_dict(torch.load(model_path, map_location=map_loc))
+model.load_state_dict(torch.load(model_path, map_location="cpu")) # map_location=map_loc
 model.to(device)
 model.eval()
 model.ingrs_only = False
