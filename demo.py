@@ -72,6 +72,12 @@ model_path = os.path.join(data_dir, 'modelbest.ckpt')
 
 #dicty = torch.load(model_path, map_location=torch.device('cpu'))
 
+#import torchvision.models as models
+#resnet50 = models.resnet50(pretrained=True)
+#print(resnet50)
+
+#os.remove('my_file.txt')
+
 dicty = torch.load("file.pt")
 #print(type(dicty))
 #print(dicty['state_dict'])
