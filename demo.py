@@ -76,7 +76,7 @@ model_path = os.path.join(data_dir, 'modelbest.ckpt')
 #resnet50 = models.resnet50(pretrained=True)
 #print(resnet50)
 
-#os.remove('my_file.txt')
+os.remove('./.torch/models/resnet50-19c8e357.pth')
 
 dicty = torch.load("file.pt")
 #print(type(dicty))
