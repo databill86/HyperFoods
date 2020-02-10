@@ -70,7 +70,8 @@ model_path = os.path.join(data_dir, 'modelbest.ckpt')
 
 # model_path = os.path.join("https://drive.google.com/open?id=1dpSIUZFtl03dvH1midHn67EZKyDzEAvy", "")
 
-dicty = torch.load(model_path, map_location=torch.device('cpu'))
+#dicty = torch.load(model_path, map_location=torch.device('cpu'))
+dicty = torch.load("file.pt")
 # print(type(dicty))
 
 # torch.save(dicty, 'file.pt')
