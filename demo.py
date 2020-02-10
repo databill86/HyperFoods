@@ -78,7 +78,7 @@ model_path = os.path.join(data_dir, 'modelbest.ckpt')
 
 #print(os.listdir("./.torch/models"))
 
-#os.remove('./.torch/models/resnet50-19c8e357.pth')
+os.remove('./.torch/models/resnet50-19c8e357.pth')
 
 #print(os.listdir("./.torch/models"))
 
