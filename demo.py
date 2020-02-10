@@ -78,21 +78,21 @@ model_path = os.path.join(data_dir, 'modelbest.ckpt')
 
 #print(os.listdir("./.torch/models"))
 
-os.remove('./.torch/models/resnet50-19c8e357.pth')
+#os.remove('./.torch/models/resnet50-19c8e357.pth')
 
 #print(os.listdir("./.torch/models"))
 
-# dicty = torch.load("file.pt")
+dicty = torch.load("file.pt")
 #print(type(dicty))
 #print(dicty['state_dict'])
 # torch.save(dicty, 'file.pt')
 
 #try:
-dicty = torch.load("resnet50-19c8e357.pth")
-print(dicty)
+#dicty = torch.load("resnet50-19c8e357.pth")
+#print(dicty)
 #except:
 #os.remove('./.torch/models/resnet50-19c8e357.pth')
-'''
+
 model.load_state_dict(dicty)  # map_location=map_loc
 #print(model.load_state_dict(dicty))
 
@@ -154,7 +154,7 @@ for i in range(numgens):
     final_output[ids[0]] = outs['ingrs']
 
 sys.stdout.flush()
-'''
+
 '''
 if valid['is_valid'] or show_anyways:
 
