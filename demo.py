@@ -37,8 +37,8 @@ use_gpu = False
 device = torch.device('cuda' if torch.cuda.is_available() and use_gpu else 'cpu')
 map_loc = None if torch.cuda.is_available() and use_gpu else 'cpu'
 
-#print(device)
-#print(map_loc)
+# print(device)
+# print(map_loc)
 
 # code below was used to save vocab files so that they can be loaded without Vocabulary class
 # ingrs_vocab = pickle.load(open(os.path.join(data_dir, 'final_recipe1m_vocab_ingrs.pkl'), 'rb'))
@@ -65,12 +65,22 @@ model = get_model(args, ingr_vocab_size, instrs_vocab_size)
 # Load the trained model parameters
 model_path = os.path.join(data_dir, 'modelbest.ckpt')
 
-print(os.path.exists('./data/' + 'modelbest.ckpt'))
-sys.stdout.flush()
-'''
-# model_path = os.path.join("https://drive.google.com/open?id=1dpSIUZFtl03dvH1midHn67EZKyDzEAvy", "")
-model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu'))) # map_location=map_loc
+#print(os.path.exists('./data/' + 'modelbest.ckpt'))
+#sys.stdout.flush()
 
+# model_path = os.path.join("https://drive.google.com/open?id=1dpSIUZFtl03dvH1midHn67EZKyDzEAvy", "")
+
+dicty = torch.load(model_path, map_location=torch.device('cpu'))
+# print(type(dicty))
+
+# torch.save(dicty, 'file.pt')
+'''
+import json
+with open('data.json', 'w') as f:
+    json.dump(dicty, f)
+'''
+model.load_state_dict(dicty)  # map_location=map_loc
+#print(model.load_state_dict(dicty))
 
 model.to(device)
 model.eval()
@@ -107,30 +117,30 @@ transform = transforms.Compose(transf_list)
 image_transf = transform(image)
 image_tensor = to_input_transf(image_transf).unsqueeze(0).to(device)
 
-#plt.imshow(image_transf)
-#plt.axis('off')
-#plt.show()
-#plt.close()
+# plt.imshow(image_transf)
+# plt.axis('off')
+# plt.show()
+# plt.close()
 
 num_valid = 1
 
 for i in range(numgens):
     with torch.no_grad():
         outputs = model.sample(image_tensor, greedy=greedy[i],
-                                temperature=temperature, beam=beam[i], true_ingrs=None)
+                               temperature=temperature, beam=beam[i], true_ingrs=None)
 
     ingr_ids = outputs['ingr_ids'].cpu().numpy()
     recipe_ids = outputs['recipe_ids'].cpu().numpy()
 
     outs, valid = prepare_output(recipe_ids[0], ingr_ids[0], ingrs_vocab, vocab)
 
-    # print(outs['ingrs'])
-    #print(final_output)
+    print(outs['ingrs'])
+    # print(final_output)
 
     final_output[ids[0]] = outs['ingrs']
 
-# sys.stdout.flush()
-'''
+sys.stdout.flush()
+
 '''
 if valid['is_valid'] or show_anyways:
 
