@@ -11,7 +11,7 @@ app.use(express.static('website'));
 
 const server = app.listen(process.env.PORT || 3000);
 
-let {PythonShell} = require('python-shell');
+// let {PythonShell} = require('python-shell');
 
 // ---------------------------------------------- Create Websocket Server ----------------------------------------------
 
@@ -64,7 +64,7 @@ function binaryToString(str) {
 app.get('/run/:url', function (req, res) {
 
     // ------------------------------
-
+/*
     let options = {
   mode: 'text',
   pythonOptions: ['-u'], // get print results in real-time
@@ -79,9 +79,9 @@ PythonShell.run('demo.py', options, function (err, results) {
   console.log('results: %j', results);
   res.send();
 });
-
+*/
     // ------------------------------
-/*
+
     console.log(binaryToString(req.params.url));
 
     url.push(binaryToString(req.params.url));
@@ -92,13 +92,13 @@ PythonShell.run('demo.py', options, function (err, results) {
     py.stdin.write(JSON.stringify(url));
     py.stdin.end();
 
-    py.stdout.on('data', function(err, data){
-        if (err) throw err;
+    py.stdout.on('data', function(data){
+
         dataString = dataString + "hello";
         //console.log("hi");
         //console.log(data);
         dataString += data.toString();
-        //res.send(dataString);
+        res.send(dataString);
 
     });
 
@@ -109,8 +109,8 @@ PythonShell.run('demo.py', options, function (err, results) {
         //console.log('Sum of numbers=',dataString);
     });
 
-    res.send();
-
+    //res.send();
+/*
     setInterval(() => {
   wss.clients.forEach((client) => {
 //dataString = dataString + "hello";
