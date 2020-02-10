@@ -64,6 +64,8 @@ args.ingrs_only = False
 model = get_model(args, ingr_vocab_size, instrs_vocab_size)
 # Load the trained model parameters
 model_path = os.path.join(data_dir, 'modelbest.ckpt')
+print(os.path.exists(data_dir + 'modelbest.ckpt'))
+# model_path = os.path.join("https://drive.google.com/open?id=1dpSIUZFtl03dvH1midHn67EZKyDzEAvy", "")
 model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu'))) # map_location=map_loc
 
 model.to(device)
