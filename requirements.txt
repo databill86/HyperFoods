@@ -6,6 +6,6 @@ nltk==3.4.5
 Pillow==6.2.1
 tqdm==4.42.1
 lmdb
-tensorflow==2.1.0
+tensorflow
 tensorboardX==2.0
 requests==2.22.0
