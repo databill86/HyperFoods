@@ -50,7 +50,8 @@ map_loc = None if torch.cuda.is_available() and use_gpu else 'cpu'
 ingrs_vocab = pickle.load(open(os.path.join(data_dir, 'ingr_vocab.pkl'), 'rb'))
 vocab = pickle.load(open(os.path.join(data_dir, 'instr_vocab.pkl'), 'rb'))
 
-# print(ingrs_vocab)
+print(ingrs_vocab)
+sys.stdout.flush()
 
 ingr_vocab_size = len(ingrs_vocab)
 instrs_vocab_size = len(vocab)
@@ -119,12 +120,12 @@ for i in range(numgens):
 
     outs, valid = prepare_output(recipe_ids[0], ingr_ids[0], ingrs_vocab, vocab)
 
-    print(outs['ingrs'])
+    #print(outs['ingrs'])
     #print(final_output)
 
     final_output[ids[0]] = outs['ingrs']
 
-sys.stdout.flush()
+#sys.stdout.flush()
 
 '''
 if valid['is_valid'] or show_anyways:

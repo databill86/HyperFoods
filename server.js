@@ -119,7 +119,7 @@ PythonShell.run('demo.py', options, function (err, results) {
     client.send(dataString);
     console.log(dataString)
   });
-}, 3000);
+}, 1000);
 
 });
 
