@@ -98,7 +98,7 @@ PythonShell.run('demo.py', options, function (err, results) {
         //console.log("hi");
         //console.log(data);
         dataString += data.toString();
-        res.send(dataString);
+        //res.send(dataString);
 
     });
 
@@ -109,8 +109,8 @@ PythonShell.run('demo.py', options, function (err, results) {
         //console.log('Sum of numbers=',dataString);
     });
 
-    //res.send();
-/*
+    res.send();
+
     setInterval(() => {
   wss.clients.forEach((client) => {
 //dataString = dataString + "hello";
@@ -119,8 +119,8 @@ PythonShell.run('demo.py', options, function (err, results) {
     client.send(dataString);
     console.log(dataString)
   });
-}, 1000);
-*/
+}, 3000);
+
 });
 
 /*
