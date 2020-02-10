@@ -64,12 +64,15 @@ args.ingrs_only = False
 model = get_model(args, ingr_vocab_size, instrs_vocab_size)
 # Load the trained model parameters
 model_path = os.path.join(data_dir, 'modelbest.ckpt')
-print(os.path.exists('./data/' + 'modelbest.ckpt'))
-sys.stdout.flush()
-'''
+
+
 # model_path = os.path.join("https://drive.google.com/open?id=1dpSIUZFtl03dvH1midHn67EZKyDzEAvy", "")
 model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu'))) # map_location=map_loc
 
+print(os.path.exists('./data/' + 'modelbest.ckpt'))
+sys.stdout.flush()
+
+'''
 model.to(device)
 model.eval()
 model.ingrs_only = False
